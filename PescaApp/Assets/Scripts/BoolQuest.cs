@@ -67,7 +67,11 @@ public class BoolQuest : MonoBehaviour
     }
     public void Work()
     {
-        if (answer == "Yes") answerContainer.student.working = true;
+        if (answer == "Yes")
+        {
+            answerContainer.student.working = true;
+            answerContainer.student.score += 26;
+        }
         else answerContainer.student.working = false;
         if (!reset)
         {
@@ -77,7 +81,12 @@ public class BoolQuest : MonoBehaviour
     }
     public void Study()
     {
-        if (answer == "Yes") answerContainer.student.studying = true;
+        if (answer == "Yes")
+        {
+            answerContainer.student.studying = true;
+            answerContainer.student.score += 26;
+
+        }
         else answerContainer.student.studying = false;
         if (!reset)
         {

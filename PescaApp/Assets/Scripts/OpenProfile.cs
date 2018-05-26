@@ -7,6 +7,7 @@ public class OpenProfile : MonoBehaviour {
 	// Use this for initialization
 	public GameObject studentProfile;
 	public UserSaver uS;
+    public DataBase dB;
 	void Start () {
 		
 	}
@@ -15,7 +16,12 @@ public class OpenProfile : MonoBehaviour {
 	void Update () {
 		
 	}
-	public void OpenStudentProfile()
+    public void AddPoints(float points)
+    {
+        Student student = dB.studentList[uS.user.id];
+        student.score += points;
+    }
+    public void OpenStudentProfile()
 	{
 		studentProfile.SetActive(true);
 		studentProfile.SendMessage("SetUser", uS.user, SendMessageOptions.DontRequireReceiver);
