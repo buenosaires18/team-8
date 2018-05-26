@@ -8,5 +8,7 @@ public class UserSaver : MonoBehaviour {
 	public void SetUser(User usr)
     {
         user = usr;
+        Job.actuaUser = user;
+        SendMessage("Activate", SendMessageOptions.DontRequireReceiver);
     }
 }
