@@ -41,6 +41,10 @@ public class BoolQuest : MonoBehaviour
                 {
                     if (answerContainer.questions[i].activeSelf)
                     {
+                        for (int j = i; j <= saltear; j++)
+                        {
+                            answerContainer.answer.Add("No contesto");
+                        }
                         answerContainer.questions[i + saltear].SetActive(true);
                         answerContainer.questions[i].SetActive(false);
                         i = answerContainer.questions.Count - 1;
@@ -61,8 +65,20 @@ public class BoolQuest : MonoBehaviour
         yes.color = Color.white;
         no.color = Color.red;
     }
-    public void Enter()
+    public void Work()
     {
+        if (answer == "Yes") answerContainer.student.working = true;
+        else answerContainer.student.working = false;
+        if (!reset)
+        {
+            reset = true;
+            answerContainer.answer.Add(answer);
+        }
+    }
+    public void Study()
+    {
+        if (answer == "Yes") answerContainer.student.studying = true;
+        else answerContainer.student.studying = false;
         if (!reset)
         {
             reset = true;
