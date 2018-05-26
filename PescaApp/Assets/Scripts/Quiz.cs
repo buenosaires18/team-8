@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
-
+    public Student student;
+    public DataBase dB;
+    public UserSaver usv;
     public GameObject questionsContainer;
     [HideInInspector]
     public List<string> answer = new List<string>();
     [HideInInspector]
     public List<GameObject> questions = new List<GameObject>();
+    public List<Interests> interest = new List<Interests>();
+    public bool working, studying;
 
     void Awake()
     {
@@ -19,6 +23,7 @@ public class Quiz : MonoBehaviour
             questions.Add(questionsContainer.GetComponentInChildren<Transform>().GetChild(i).gameObject);
         }
         questions[0].SetActive(true);
+        usv = GetComponent<UserSaver>();
     }
     private void Update()
     {
@@ -29,5 +34,14 @@ public class Quiz : MonoBehaviour
                 print(answer[i]);
             }
         }
+    }
+    public void Activate()
+    {
+        student = dB.studentList[usv.user.id];
+    }
+    public void SetStudentValues()
+    {
+        student.fisrtTime = false;
+        student.interests = interest;
     }
 }
