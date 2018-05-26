@@ -6,7 +6,8 @@ public class Student : MonoBehaviour
 {
 
     public int id, year;
-    public bool fisrtTime;
+	public float score;
+    public bool fisrtTime,working,studying;
     public string name, mail, phone, teacher, job, knowlage;
     public List<Interests> interests;
 

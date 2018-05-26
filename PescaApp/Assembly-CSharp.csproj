@@ -54,12 +54,14 @@
      <Compile Include="Assets\Scripts\BoolQuest.cs" />
      <Compile Include="Assets\Scripts\Buscador.cs" />
      <Compile Include="Assets\Scripts\DataBase.cs" />
+     <Compile Include="Assets\Scripts\InterestQuestion.cs" />
      <Compile Include="Assets\Scripts\Interests.cs" />
      <Compile Include="Assets\Scripts\Job.cs" />
      <Compile Include="Assets\Scripts\JobManager.cs" />
      <Compile Include="Assets\Scripts\LogInManager.cs" />
      <Compile Include="Assets\Scripts\LoginScreen.cs" />
      <Compile Include="Assets\Scripts\MenuSwitcher.cs" />
+     <Compile Include="Assets\Scripts\OpenProfile.cs" />
      <Compile Include="Assets\Scripts\Orientador.cs" />
      <Compile Include="Assets\Scripts\PostJob.cs" />
      <Compile Include="Assets\Scripts\Quiz.cs" />
