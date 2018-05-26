@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\BoolQuest.cs" />
      <Compile Include="Assets\Scripts\Buscador.cs" />
      <Compile Include="Assets\Scripts\DataBase.cs" />
+     <Compile Include="Assets\Scripts\Home.cs" />
      <Compile Include="Assets\Scripts\InterestQuestion.cs" />
      <Compile Include="Assets\Scripts\Interests.cs" />
      <Compile Include="Assets\Scripts\Job.cs" />

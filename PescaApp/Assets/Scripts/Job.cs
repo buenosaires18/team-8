@@ -13,6 +13,9 @@ public class Job : MonoBehaviour
     public DataBase dB;
 	public Text jobText;
 
+	public GameObject image;
+	public GameObject name;
+
     void Start()
     {
         this.gameObject.SetActive(active);
@@ -38,6 +41,9 @@ public class Job : MonoBehaviour
                     if (dB.studentList[actuaUser.id].interests[j] == neededInterests[i])
                     {
                         check = false;
+						this.gameObject.SetActive(true);
+						image.SetActive (true);
+						name.SetActive (true);
                         return;
                     }
                     j++;
@@ -46,6 +52,9 @@ public class Job : MonoBehaviour
             }
         }
         this.gameObject.SetActive(false);
+		image.SetActive (false);
+		name.SetActive (false);
+
     }
 
 

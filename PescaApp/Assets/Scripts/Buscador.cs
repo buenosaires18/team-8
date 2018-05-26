@@ -17,6 +17,7 @@ public class Buscador : MonoBehaviour
 
 		images [1].enabled = false;
 		texts [1].enabled = false;
+		texts [2].enabled = false;
 	}
 	
 
@@ -29,6 +30,8 @@ public class Buscador : MonoBehaviour
 
 			images [1].enabled = false;
 			texts [1].enabled = false;
+			texts [2].enabled = false;
+
 			return;
 		}
 	
@@ -41,6 +44,8 @@ public class Buscador : MonoBehaviour
 
 			images [0].enabled = false;
 			texts [0].enabled = false;
+			texts [2].enabled = false;
+
 			return;
 
 		}
@@ -50,10 +55,21 @@ public class Buscador : MonoBehaviour
 
 		images [1].enabled = false;
 		texts [1].enabled = false;
+
+		texts[2].enabled = true;
 	}
 
 	public void ChangeActive()
 	{
+		images [0].enabled = false;
+		texts [0].enabled = false;
+
+		images [1].enabled = false;
+		texts [1].enabled = false;
+		texts[2].enabled = false;
+
+
+		search.text = "";
 		menu.SetActive (!menu.activeSelf);
 	}
 
