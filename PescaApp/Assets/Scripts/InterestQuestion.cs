@@ -55,5 +55,6 @@ public class InterestQuestion : MonoBehaviour
         if (tecnology) answerContainer.student.interests.Add(Interests.Tecnology);
         if (fisicalWork) answerContainer.student.interests.Add(Interests.FisicalWork);
         if (administration) answerContainer.student.interests.Add(Interests.Administration);
+		answerContainer.student.fisrtTime = false;
     }
 }
