@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Job : MonoBehaviour
 {
@@ -10,11 +11,16 @@ public class Job : MonoBehaviour
     public bool active;
     public static User actuaUser;
     public DataBase dB;
+	public Text jobText;
 
     void Start()
     {
         this.gameObject.SetActive(active);
         dB = GameObject.Find("DataBase").GetComponent<DataBase>();
+		jobText = GetComponent<Text> ();
+
+		jobText.text = "Nueva oferta de trabajo" + "\n" + "Empresa: " + jobName + "\n" + "Puesto: " + jobPosition + "\n" + "Tiempo: Full";
+
     }
     public void CheckIfShow()
     {
