@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LogInManager : MonoBehaviour {
 
     TypeUser _typeUser;
     string _username;
     string _password;
+
+    public InputField _usernameField;
+    public InputField _passwordField;
 
     public GameObject firstTimeLogIn;
     public GameObject normalLogIn;
@@ -17,10 +21,12 @@ public class LogInManager : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+    // Update is called once per frame
+    void Update()
+    {
+        _username = _usernameField.text;
+        _password = _passwordField.text;
 	}
 
     public void ChangeTypeOfUser(TypeUser typeUser)
