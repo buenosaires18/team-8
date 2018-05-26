@@ -145,8 +145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.492676, y: -756.31396}
-  m_SizeDelta: {x: 788.05, y: 207.8}
+  m_AnchoredPosition: {x: 122.492676, y: -924.9474}
+  m_SizeDelta: {x: 788, y: 396.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212640988
 MonoBehaviour:
@@ -180,7 +180,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Nueva oferta de trabajo
+
+    Empresa: Ford
+
+    Posicion: Operario
+
+    Tiempo: Full time'
 --- !u!222 &212640989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1525,7 +1531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.492676, y: -386.14685}
+  m_AnchoredPosition: {x: 122.492676, y: -433.36325}
   m_SizeDelta: {x: 788.05, y: 207.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964006838
@@ -1560,7 +1566,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Buenisimo pedro, estoy muy orgulloso de vos!!
 --- !u!222 &964006839
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1754,7 +1760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.49271, y: -45.99324}
+  m_AnchoredPosition: {x: 122.49271, y: 69}
   m_SizeDelta: {x: 788.05, y: 207.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163669673
@@ -1780,16 +1786,17 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 3
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Hola chicos, queria contarles que consegui laburo en Philips y estoy re
+    contento.
 --- !u!222 &1163669674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2096,7 +2103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -458.24164, y: 63}
+  m_AnchoredPosition: {x: -451, y: 205}
   m_SizeDelta: {x: 182.9, y: 164.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315567226
