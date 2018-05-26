@@ -6,6 +6,6 @@ public class User : MonoBehaviour {
 
     public int id;
     public string username, password;
-    public TypeUser tipo;
+    public TypeUser type;
 	
 }
