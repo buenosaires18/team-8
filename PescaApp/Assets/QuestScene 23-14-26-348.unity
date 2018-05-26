@@ -163,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 51760536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 1779434352}
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 232579588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 1062703363}
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 239014798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d62814ebd90f184ab7e5254685aef73, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c91efd5853a946d28d943cf6e45d147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questionsContainer: {fileID: 1595432570}
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 725902195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 1237097554}
@@ -2852,7 +2852,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 975699845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 1129561369}
@@ -2937,13 +2937,12 @@ RectTransform:
 --- !u!114 &985766040
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114067371869901218, guid: dac69571e76f196449cb127d1f463300,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 985766038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a975aa42656c3a8499e93be450024cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b3eeeceaedfc45acb05289f63882d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   answerContainer: {fileID: 239014799}
@@ -3191,7 +3190,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030756888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 1992005271}
@@ -3281,7 +3280,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1060872864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 85251813}
@@ -4675,7 +4674,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1398093440}
+      - m_Target: {fileID: 0}
         m_MethodName: Enter
         m_Mode: 1
         m_Arguments:
@@ -5127,7 +5126,6 @@ GameObject:
   - component: {fileID: 1398093439}
   - component: {fileID: 1398093442}
   - component: {fileID: 1398093441}
-  - component: {fileID: 1398093440}
   m_Layer: 5
   m_Name: Question String (8)
   m_TagString: Untagged
@@ -5156,20 +5154,6 @@ RectTransform:
   m_AnchoredPosition: {x: 9.399895, y: 299.22003}
   m_SizeDelta: {x: 542.69995, y: 267.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1398093440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114578613620957374, guid: dac69571e76f196449cb127d1f463300,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1398093438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputTxt: {fileID: 0}
-  answerContainer: {fileID: 239014799}
 --- !u!114 &1398093441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6764,7 +6748,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1931975681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 2111266054}
@@ -7503,7 +7487,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2055078058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a975aa42656c3a8499e93be450024cf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b3eeeceaedfc45acb05289f63882d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   answerContainer: {fileID: 239014799}
@@ -7826,7 +7810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2134001157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a98d99fba3d63c45bc33609328a08d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 724e9792ebac84c388ea1ec04abe9378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputTxt: {fileID: 1269586986}

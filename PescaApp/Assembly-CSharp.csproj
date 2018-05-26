@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\DataBase.cs" />
      <Compile Include="Assets\Scripts\Interests.cs" />
      <Compile Include="Assets\Scripts\Job.cs" />
+     <Compile Include="Assets\Scripts\JobManager.cs" />
      <Compile Include="Assets\Scripts\LogInManager.cs" />
      <Compile Include="Assets\Scripts\LoginScreen.cs" />
      <Compile Include="Assets\Scripts\Orientador.cs" />
