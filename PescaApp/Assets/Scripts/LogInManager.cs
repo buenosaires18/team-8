@@ -49,6 +49,8 @@ public class LogInManager : MonoBehaviour {
 
     public void LogIn()
     {
+		_usernameField.text = "";
+		_passwordField.text = "";
         if(dB.LogIn(_username, _password, _typeUser) != null)
         {
             var sa = dB.LogIn(_username, _password, _typeUser);

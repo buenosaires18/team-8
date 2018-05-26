@@ -10,6 +10,9 @@ public class Buscador : MonoBehaviour
 	public Image[] images;
 	public Text[] texts;
 
+	public Student carlos;
+	public GameObject perfil;
+
 	void Start ()
 	{
 		images [0].enabled = false;
@@ -20,7 +23,12 @@ public class Buscador : MonoBehaviour
 		texts [2].enabled = false;
 	}
 	
-
+	public void OpenSearchProfile()
+	{
+		perfil.SetActive (true);
+		perfil.SendMessage ("LoadData",carlos);
+		ChangeActive ();
+	}
 	public void Search ()
 	{
 		if (search.text.ToLower() == "carlos")
@@ -70,6 +78,7 @@ public class Buscador : MonoBehaviour
 
 
 		search.text = "";
+
 		menu.SetActive (!menu.activeSelf);
 	}
 

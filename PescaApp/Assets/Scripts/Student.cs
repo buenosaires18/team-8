@@ -8,7 +8,7 @@ public class Student : MonoBehaviour
     public int id, year;
 	public float score;
     public bool fisrtTime,working,studying;
-    public string name, mail, phone, teacher, job, knowlage;
+    public string name, mail, phone, teacher, job, knowlage, satisfaction;
     public List<Interests> interests;
 
 

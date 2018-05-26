@@ -7,6 +7,7 @@ public class Home : MonoBehaviour {
 	public GameObject perfil;
 	public GameObject home;
 
+
 	void Start () {
 		
 	}

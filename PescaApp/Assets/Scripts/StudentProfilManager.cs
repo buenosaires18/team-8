@@ -32,10 +32,8 @@ public class StudentProfilManager : MonoBehaviour {
         logMenu.SetActive(true);
         this.gameObject.SetActive(false);
     }
-	public void Activate ()
+	public void LoadData(Student student)
 	{
-		Debug.Log (uS.user.id);
-		Student student = dB.studentList[uS.user.id];
 
 		name.text = student.name;
 		string trabajo = "";
@@ -51,28 +49,33 @@ public class StudentProfilManager : MonoBehaviour {
 
 		description.text = "e-mail: " + student.mail + "\n" + "Telefono: " + student.phone+
 			"\n" + "Orientador: " + student.teacher + "\n" + "Anio" + student.year+ "\n" + "Perfil Linkedin: CarlosLinkedin"
-			+ "\n" + "Trabajo: " + trabajo+ "\n" + "Estudio: " + estudio;
+			+ "\n" + "Trabajo: " + trabajo+ "\n" + "Estudio: " + estudio+ "\n" + "Satisfaccion: " + student.satisfaction;
 
 		progressBar.fillAmount = student.score / 100;
 		var fill = progressBar.fillAmount;
-		if (fill <= 0.25) 
+		if (fill <= 0.33) 
 		{
 			animal.sprite = animalsImages [0];
-			
-		} else if (fill <= 0.5)
+
+		} else if (fill <= 0.66)
 		{
 			animal.sprite = animalsImages [1];
 
-			
-		} else if (fill <= 0.75)
+
+		} else if (fill <= 0.99)
 		{
 			animal.sprite = animalsImages [2];
 
-		} else 
+		} else if(fill == 1)
 		{
 			animal.sprite = animalsImages [3];
 
 		}
-		
+	}
+	public void Activate ()
+	{
+		Student student = dB.studentList[uS.user.id];
+
+		LoadData (student);
 	}
 }

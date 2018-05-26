@@ -43,6 +43,7 @@ public class Quiz : MonoBehaviour
     public void SetStudentValues()
     {
         student.fisrtTime = false;
+		student.satisfaction = answer [6];
         homeMenu.SetActive(true);
         homeMenu.SendMessage("SetUser", usv.user,SendMessageOptions.DontRequireReceiver);
         gameObject.SetActive(false);

@@ -41,7 +41,7 @@ public class BoolQuest : MonoBehaviour
                 {
                     if (answerContainer.questions[i].activeSelf)
                     {
-                        for (int j = i; j <= saltear; j++)
+                        for (int j = i; j <= saltear + 1; j++)
                         {
                             answerContainer.answer.Add("No contesto");
                         }
