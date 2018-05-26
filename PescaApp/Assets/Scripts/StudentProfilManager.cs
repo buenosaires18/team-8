@@ -13,7 +13,7 @@ public class StudentProfilManager : MonoBehaviour {
 	public UserSaver uS;
 	public DataBase dB;
 
-
+    public GameObject logMenu;
 
 	public Sprite[] animalsImages;
 
@@ -26,6 +26,16 @@ public class StudentProfilManager : MonoBehaviour {
 	{
 		
 	}
+    public void AddPoints( float points)
+    {
+		Student student = dB.studentList[uS.user.id];
+        student.score += points;
+    }
+    public void LogOut()
+    {
+        logMenu.SetActive(true);
+        this.gameObject.SetActive(false);
+    }
 	public void Activate ()
 	{
 		Debug.Log (uS.user.id);
