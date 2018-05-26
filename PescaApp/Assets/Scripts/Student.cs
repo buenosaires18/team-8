@@ -7,10 +7,11 @@ public class Student : MonoBehaviour
 
     public int id, year;
     public bool fisrtTime;
-    public string name, mail, phone, teacher, job, knowlage, interest;
+    public string name, mail, phone, teacher, job, knowlage;
+    public List<Interests> interests;
 
 
-    public Student(int id,string name, string mail, string phone, string teacher, int year, string job, string knowlage, string interest)
+    public Student(int id,string name, string mail, string phone, string teacher, int year, string job, string knowlage, List<Interests> interest)
     {
         this.id = id;
         this.year = year;
@@ -20,6 +21,6 @@ public class Student : MonoBehaviour
         this.teacher = teacher;
         this.job = job;
         this.knowlage = knowlage;
-        this.interest = interest;
+        this.interests = interest;
     }
 }
