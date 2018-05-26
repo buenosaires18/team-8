@@ -37,13 +37,13 @@ public class DataBase : MonoBehaviour {
                 auxUserList = usersAdmin;
                 break;
         }
-        bool finished = false;
+        bool finished = true;
         int i = 0;
         while (finished)
         {
             if (auxUserList[i].username == username)
             {
-                finished = true;
+                finished = false;
                 return auxUserList[i];
             }
             i++;
