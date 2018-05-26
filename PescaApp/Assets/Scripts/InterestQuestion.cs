@@ -10,7 +10,6 @@ public class InterestQuestion : MonoBehaviour
     public Image maButton;
     public Image adButton;
 
-    private List<Interests> interests;
     private bool tecnology;
     private bool fisicalWork;
     private bool administration;
@@ -55,6 +54,6 @@ public class InterestQuestion : MonoBehaviour
         if (tecnology) answerContainer.student.interests.Add(Interests.Tecnology);
         if (fisicalWork) answerContainer.student.interests.Add(Interests.FisicalWork);
         if (administration) answerContainer.student.interests.Add(Interests.Administration);
-		answerContainer.student.fisrtTime = false;
+        answerContainer.SetStudentValues();
     }
 }

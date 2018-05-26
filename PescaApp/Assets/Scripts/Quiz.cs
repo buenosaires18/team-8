@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
+    public GameObject homeMenu;
     public Student student;
     public DataBase dB;
     public UserSaver usv;
@@ -42,6 +43,8 @@ public class Quiz : MonoBehaviour
     public void SetStudentValues()
     {
         student.fisrtTime = false;
-        student.interests = interest;
+        homeMenu.SetActive(true);
+        homeMenu.SendMessage("SetUser", usv.user,SendMessageOptions.DontRequireReceiver);
+        gameObject.SetActive(false);
     }
 }
