@@ -52,12 +52,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\DataBase.cs" />
+     <Compile Include="Assets\Scripts\Interests.cs" />
+     <Compile Include="Assets\Scripts\Job.cs" />
      <Compile Include="Assets\Scripts\LogInManager.cs" />
      <Compile Include="Assets\Scripts\LoginScreen.cs" />
      <Compile Include="Assets\Scripts\Orientador.cs" />
+     <Compile Include="Assets\Scripts\PostJob.cs" />
      <Compile Include="Assets\Scripts\Student.cs" />
      <Compile Include="Assets\Scripts\TypeUser.cs" />
      <Compile Include="Assets\Scripts\User.cs" />
+     <Compile Include="Assets\Scripts\UserSaver.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
