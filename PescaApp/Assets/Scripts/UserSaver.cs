@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UserSaver : MonoBehaviour {
 
-    public User user;
+    public static User user;
 	public void SetUser(User usr)
     {
         user = usr;
