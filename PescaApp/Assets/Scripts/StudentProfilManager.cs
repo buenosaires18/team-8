@@ -26,11 +26,7 @@ public class StudentProfilManager : MonoBehaviour {
 	{
 		
 	}
-    public void AddPoints( float points)
-    {
-		Student student = dB.studentList[uS.user.id];
-        student.score += points;
-    }
+   
     public void LogOut()
     {
         logMenu.SetActive(true);
