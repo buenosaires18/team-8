@@ -37,16 +37,12 @@ public class DataBase : MonoBehaviour {
                 auxUserList = usersAdmin;
                 break;
         }
-        bool finished = true;
-        int i = 0;
-        while (finished)
+        for (int i = 0; i < auxUserList.Count; i++)
         {
             if (auxUserList[i].username == username)
             {
-                finished = false;
                 return auxUserList[i];
             }
-            i++;
         }
         return null;
     }

@@ -49,34 +49,50 @@ public class LogInManager : MonoBehaviour {
 
     public void LogIn()
     {
-        var sa = dB.LogIn(_username, _password, _typeUser);
-        switch (_typeUser)
+        if(dB.LogIn(_username, _password, _typeUser) != null)
         {
-            case TypeUser.Student:
-                if (dB.studentList[sa.id].fisrtTime)
-                {
-                    firstTimeLogIn.SetActive(true);
-                    firstTimeLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
-                }
-                else
-                {
-                    normalLogIn.SetActive(true);
-                    normalLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
+            var sa = dB.LogIn(_username, _password, _typeUser);
+            switch (_typeUser)
+            {
+                case TypeUser.Student:
+                    if (dB.studentList[sa.id].fisrtTime)
+                    {
+                        if (firstTimeLogIn != null)
+                        {
+                            firstTimeLogIn.SetActive(true);
+                            firstTimeLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
+                        }
+                    }
+                    else
+                    {
+                        if (normalLogIn != null)
+                        {
+                            normalLogIn.SetActive(true);
+                            normalLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
+                        }
 
 
-                }
-                break;
-            case TypeUser.Orientador:
-                orientatorLogIn.SetActive(true);
-                orientatorLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
-                break;
-            case TypeUser.Admin:
-                adminLogIn.SetActive(true);
-                adminLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
-                break;
+                    }
+                    break;
+                case TypeUser.Orientador:
+                    if (orientatorLogIn != null)
+                    {
+                        orientatorLogIn.SetActive(true);
+                        orientatorLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
+                    }
+                    break;
+                case TypeUser.Admin:
+                    if (adminLogIn != null)
+                    {
+                        adminLogIn.SetActive(true);
+                        adminLogIn.SendMessage("SetUser", sa, SendMessageOptions.DontRequireReceiver);
+                    }
+                    break;
+            }
+
+            this.gameObject.SetActive(false);
         }
 
-        this.gameObject.SetActive(false);
 
     }
 }
